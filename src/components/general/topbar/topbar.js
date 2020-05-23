@@ -89,7 +89,7 @@ className={[classes.iconButton,classes[i.class]]}>
 
 <Button
  variant="contained"
- startIcon={<PersonIcon style={{fontSize:18}}/>}
+ startIcon={<PersonIcon style={{fontSize:18,position:'relative',top:3}}/>}
  className={classes.authBtn}
   >
 Sign Up
@@ -97,7 +97,7 @@ Sign Up
 
 <Button 
 variant="contained" 
-startIcon={<LockIcon style={{fontSize:15}}/>}
+startIcon={<LockIcon style={{fontSize:15,position:'relative',top:3}} />}
 className={classes.authBtn}
 >
 Login
@@ -122,7 +122,7 @@ const styles=theme=>({
 authBtn:{
     color:'white',
     marginRight:5,
-    background:'rgba(0,0,0,.2)',
+    background:theme.palette.primary.topbarBtn,
     [theme.breakpoints.down('sm')]:{
         display:'none'    
 },
@@ -130,7 +130,7 @@ authBtn:{
     display:'inline'    
 },
 '&:hover':{
-    background:'rgba(0,0,0,.2)'
+    background:theme.palette.primary.topbarBtn,
 }
 },
 
@@ -161,7 +161,7 @@ authBtn:{
             topbar:{
                 width:'100vw',
                 height:'7vh',
-                background:'#2e3537',
+                background:theme.palette.primary.topbar,
                 display:'flex',
                 alignItems:'center',
                 justifyContent:'space-between'
@@ -169,7 +169,7 @@ authBtn:{
          
             iconButton:{
                 borderRadius:'50%',
-                background:'rgba(0,0,0,.2)',
+                background:theme.palette.primary.topbarBtn,
                 padding:7,
                 marginRight:4,
                 [theme.breakpoints.down('sm')]:{
@@ -178,27 +178,27 @@ authBtn:{
             },
             twitter:{
                 '&:hover':{
-                    background:'#1da1f2'
+                    background:theme.palette.secondary.twitter
                 }
             },
             facebook:{
                 '&:hover':{
-                    background:'#3b5998'
+                    background:theme.palette.secondary.facebook
                 }
             },
             linkedIn:{
                 '&:hover':{
-                    background:'#0077b5'
+                    background:theme.palette.secondary.linkedIn
                 }
             },
             pinInterest:{
                 '&:hover':{
-                    background:'#e60023'
+                    background:theme.palette.secondary.pinInterest
                 }
             },
             gplus:{
                 '&:hover':{
-                    background:'#dc5246'
+                    background:theme.palette.secondary.gplus
                 }
             }
 

@@ -1,8 +1,10 @@
 import React from 'react'
 import withStyles from "@material-ui/core/styles/withStyles";
 
+import './App.css'
 
 import Topbar from './components/general/topbar/topbar'
+import SpeedDial from './components/general/speedDial'
 
 
 const App = () => {
@@ -13,9 +15,11 @@ const App = () => {
     return (
    
 
-<React.Fragment>
+<React.Fragment >
 
 <Topbar/>
+
+<SpeedDial/>
 
 
 </React.Fragment>
