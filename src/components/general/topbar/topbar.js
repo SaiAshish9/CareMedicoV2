@@ -91,7 +91,6 @@ className={[classes.iconButton,classes[i.class]]}>
  variant="contained"
  startIcon={<PersonIcon style={{fontSize:18}}/>}
  className={classes.authBtn}
- disableElevation
   >
 Sign Up
 </Button>
@@ -100,7 +99,6 @@ Sign Up
 variant="contained" 
 startIcon={<LockIcon style={{fontSize:15}}/>}
 className={classes.authBtn}
-disableElevation
 >
 Login
 </Button>
@@ -130,6 +128,9 @@ authBtn:{
 },
 [theme.breakpoints.up('sm')]:{
     display:'inline'    
+},
+'&:hover':{
+    background:'rgba(0,0,0,.2)'
 }
 },
 
