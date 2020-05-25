@@ -122,6 +122,7 @@ const styles=theme=>({
 authBtn:{
     color:'white',
     marginRight:5,
+    textTransform:'none',
     background:theme.palette.primary.topbarBtn,
     [theme.breakpoints.down('sm')]:{
         display:'none'    

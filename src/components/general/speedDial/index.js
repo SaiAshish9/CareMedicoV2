@@ -1,4 +1,4 @@
-import React,{useContext,createContext} from 'react';
+import React,{useContext} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import SpeedDial from '@material-ui/lab/SpeedDial';
 import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
@@ -6,13 +6,13 @@ import ColorLensIcon from '@material-ui/icons/ColorLens';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import Brightness2Icon from '@material-ui/icons/Brightness2';
 
-
+import {ThemeContext} from '../../../contexts/ThemeContext'
 
 
 const useStyles = makeStyles((theme) => ({
 
   speedDial: {
-    position: 'absolute',
+    position: 'fixed',
     bottom: '3vh',
     right: theme.spacing(2),
 
@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export const ThemeContext=createContext(null)
 
 
 

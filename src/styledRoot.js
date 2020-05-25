@@ -2,7 +2,6 @@ import React from 'react'
 
 import {MuiThemeProvider,createMuiTheme,responsiveFontSizes} from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import pink from '@material-ui/core/colors/pink'
 import purple from '@material-ui/core/colors/purple'
 
 
@@ -25,9 +24,10 @@ function styledRoot(Component){
                    default:props.dark?'#303030':'white'
                 },
                 primary:{
-                    main:pink[500],
+                    main:'#ea315a',
                     topbar:'#2e3537',
-                    topbarBtn:'rgba(0,0,0,.2)'
+                    topbarBtn:'rgba(0,0,0,.2)',
+                    logoDark:'#5d5d5e'
                 
                 },
                 secondary:{
@@ -40,7 +40,8 @@ function styledRoot(Component){
                 }
             },
             typography:{
-                useNextVariants:true
+                useNextVariants:true,
+                fontFamily:"'Poppins', sans-serif"
             }
         })
         
