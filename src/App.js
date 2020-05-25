@@ -11,6 +11,15 @@ import Grid from '@material-ui/core/Grid'
 import {FormDialogContext} from './contexts/FormDialog'
 
 import FormDialog from './components/homepage/dialog'
+import LeftRight from './components/homepage/leftRight'
+import RightLeft from './components/homepage/rightLeft'
+import DashboardImg1 from './assets/images/dashboard1.png'
+import DashboardImg2 from './assets/images/dashboard2.png'
+import DashboardImg3 from './assets/images/dashboard3.png'
+
+import Footer from './components/general/footer'
+
+import Section5 from './components/homepage/section5'
 
 
 const App = ({classes}) => {
@@ -40,7 +49,29 @@ const App = ({classes}) => {
 
 <FormDialog/>
 
+
+<LeftRight
+content="Visibility over availability of inventory in the adjacent links of the supply chain"
+image={DashboardImg1}
+/>
+
+
+<RightLeft
+content="Enablement of demand mapping and forecasting"
+image={DashboardImg2}
+/>
+
+<LeftRight
+content="Proper documentation management for prescription and invoices at all levels"
+image={DashboardImg3}
+/>
+
 </Grid>
+
+
+<Section5/>
+
+<Footer/>
 
 
 </FormDialogContext.Provider>

@@ -3,8 +3,9 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import Grid from '@material-ui/core/Grid'
 import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button'
+import Button from '../general/button'
 import MobilePic from '../../assets/images/mobile.png'
+
 
 const Section1 = ({classes}) => {
     return (
@@ -41,7 +42,7 @@ PRIVATE SECURE EXCLUSIVE
 </Typography>
 
 
-<Button className={classes.btn} >
+<Button >
 Get Started
 </Button>
 
@@ -85,7 +86,7 @@ container: {
     justifyContent:'space-between',
     alignItems:'center',
     flexWrap:'wrap',
-    height:'85vh',
+    minHeight:'85vh',
     width:'100vw',
     overflowX:'hidden'
 
@@ -100,19 +101,9 @@ grid:{
 typo:{
     color:theme.palette.primary.logoDark
 },
-btn:{
-    width:'10rem',
-    height:'7vh',
-    borderRadius:10,
-    background:theme.palette.primary.main,
-    color:'#fff',
-    '&:hover':{
-        background:theme.palette.primary.main
-    }
-},
 img:{
     [theme.breakpoints.down('sm')]:{
-marginTop:'10vh'
+marginTop:'5vh'
     }  
 }
 
