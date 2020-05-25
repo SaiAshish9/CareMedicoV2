@@ -94,7 +94,7 @@ className={[classes.iconButton,classes[i.class]]}>
 <Button
  variant="contained"
  startIcon={<PersonIcon style={{fontSize:18,position:'relative',top:3}}/>}
- className={classes.authBtn}
+ className={classes.authBtn1}
  onClick={ toggleFormDisplay} 
   >
 Sign Up
@@ -132,6 +132,20 @@ authBtn:{
     [theme.breakpoints.down('sm')]:{
         display:'none'    
 },
+[theme.breakpoints.up('sm')]:{
+    display:'inline'    
+},
+'&:hover':{
+    background:theme.palette.primary.topbarBtn,
+}
+},
+
+authBtn1:{
+    color:'white',
+    marginRight:5,
+    textTransform:'none',
+    background:theme.palette.primary.topbarBtn,
+
 [theme.breakpoints.up('sm')]:{
     display:'inline'    
 },

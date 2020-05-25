@@ -27,6 +27,7 @@ const App = ({classes}) => {
     const [display,setDisplay]=useState(false)
 
 
+const toggleFormDisplay=()=>setDisplay(!display)
 
     return (
    
@@ -45,7 +46,7 @@ const App = ({classes}) => {
 
 <SpeedDial/>
 
-<Section1/>
+<Section1 toggleFormDisplay={toggleFormDisplay}/>
 
 <FormDialog/>
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import withStyles from '@material-ui/core/styles/withStyles'
 import Grid from '@material-ui/core/Grid'
 import Container from '@material-ui/core/Container'
@@ -6,8 +6,10 @@ import Typography from '@material-ui/core/Typography'
 import Button from '../general/button'
 import MobilePic from '../../assets/images/mobile.png'
 
+const Section1 = ({classes,toggleFormDisplay}) => {
 
-const Section1 = ({classes}) => {
+
+
     return (
         <React.Fragment>
             <Container className={classes.container}>
@@ -42,7 +44,10 @@ PRIVATE SECURE EXCLUSIVE
 </Typography>
 
 
-<Button >
+<Button 
+variant="contained"
+// onClick={()=>toggleFormDisplay()}
+>
 Get Started
 </Button>
 
