@@ -53,7 +53,7 @@ Get Started
 <Grid
 sm={12}
 xs={12}
-lg={4}
+lg={5}
 style={{
     display:'flex',
     justifyContent:'center',
@@ -65,7 +65,8 @@ style={{
 src={MobilePic}
 className={classes.img}
 style={{
-    width:'34rem',
+    width:'100%',
+    minWidth:'35em',
     height:'70vh'
         }}
 />

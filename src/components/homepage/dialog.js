@@ -37,7 +37,7 @@ useEffect(()=>{
 
       <Dialog fullScreen={small && true}
       disableBackdropClick={true}  maxWidth='sm' 
-      open={!display}    >
+      open={display}    >
    
          
 
@@ -50,7 +50,11 @@ useEffect(()=>{
 <Container className={classes.form}>
 
 
-<Typography variant="h5" style={{fontWeight: 'bold',textAlign: 'center',marginBottom:'10vh'}}>
+<Typography variant="h5" style={{
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom:'10vh',
+    marginRight:'2rem'}}>
     Welcome Back
 </Typography>
 
@@ -125,6 +129,7 @@ textAlign:'end',
 margin:'10px 0',
 fontWeight: 'bold'
 }}
+className={classes.forgot}
 color="primary">
 
 Forgot Password?
@@ -193,7 +198,15 @@ margin:'10px 20px !important'
 }
 
 },
+forgot:{
+    [theme.breakpoints.down('xs')]:{
+        textAlign:'center !important',
+
+    }
+},
 label:{
+
+    
 marginLeft:'20px'
 },
 clear:{
