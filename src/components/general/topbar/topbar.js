@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { Typography } from '@material-ui/core';
 import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button"
@@ -12,12 +12,16 @@ import {FaLinkedinIn,FaFacebookF} from 'react-icons/fa'
 import TwitterIcon from '@material-ui/icons/Twitter';
 
 import {content} from '../../../constants/content/general/topbar'
+import {FormDialogContext} from '../../../contexts/FormDialog'
 
 
 
 
 
 const Topbar = ({classes}) => {
+
+    const {display,toggleFormDisplay}=useContext(FormDialogContext)
+
 
     const icons=[
         {
@@ -91,6 +95,7 @@ className={[classes.iconButton,classes[i.class]]}>
  variant="contained"
  startIcon={<PersonIcon style={{fontSize:18,position:'relative',top:3}}/>}
  className={classes.authBtn}
+ onClick={ toggleFormDisplay} 
   >
 Sign Up
 </Button>

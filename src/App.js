@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import withStyles from "@material-ui/core/styles/withStyles";
 
 import './App.css'
@@ -8,17 +8,26 @@ import SpeedDial from './components/general/speedDial'
 import Navbar from './components/general/navbar'
 import Section1 from './components/homepage/section1'
 import Grid from '@material-ui/core/Grid'
+import {FormDialogContext} from './contexts/FormDialog'
 
-const App = () => {
+import FormDialog from './components/homepage/dialog'
 
+
+const App = ({classes}) => {
+
+    const [display,setDisplay]=useState(false)
 
 
 
     return (
    
 
-<React.Fragment >
-
+        <FormDialogContext.Provider
+        value={{
+          display,
+          toggleFormDisplay:()=>setDisplay(!display)
+        }}
+        >
 <Grid style={{overflowX:'hidden'}}>
 
 <Topbar/>
@@ -28,10 +37,13 @@ const App = () => {
 <SpeedDial/>
 
 <Section1/>
+
+<FormDialog/>
+
 </Grid>
 
 
-</React.Fragment>
+</FormDialogContext.Provider>
 
 
     )
