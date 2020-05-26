@@ -129,9 +129,9 @@ authBtn:{
     marginRight:5,
     textTransform:'none',
     background:theme.palette.primary.topbarBtn,
-    [theme.breakpoints.down('sm')]:{
-        display:'none'    
-},
+//     [theme.breakpoints.down('sm')]:{
+//         display:'none'    
+// },
 [theme.breakpoints.up('sm')]:{
     display:'inline'    
 },
@@ -181,7 +181,8 @@ authBtn1:{
             topbar:{
                 width:'100vw',
                 height:'7vh',
-                background:theme.palette.primary.topbar,
+                // background:theme.palette.primary.topbar,
+                background:theme.palette.primary.violet,
                 display:'flex',
                 alignItems:'center',
                 justifyContent:'space-between'

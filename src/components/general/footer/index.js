@@ -33,45 +33,48 @@ const links=[
     return (
         <Grid className={classes.container}>
             
-<Grid lg={3} xs={5} className={classes.grid}>
+{/* <Grid lg={3} xs={5} className={classes.grid}> */}
 
-<Container>
+{/* <Container> */}
 
-{
+{/* {
     images.map((i,k)=>(
         <img
         src={i}
         key={k}
         style={{
-            width:k===0?'60%':'60%',
+            width:k===0?'50%':'50%',
             height:k===0?'9vh':'7vh',
             margin:'5px'
         }}
         />
     ))
-}
+} */}
 
-</Container>
+{/* </Container> */}
 
-</Grid>
+{/* </Grid> */}
 
 
 {links.map((i,k)=>(
 
-<Grid xs={5} key={k} lg={3} className={classes.grid}>
+<Grid xs={6} key={k} lg={4} className={classes.grid}>
 
-<Typography style={{color:'white'}}>
+
+<Grid style={{height:'20vh'}}>
+
+
+<Typography style={{color:'white',marginLeft:5,marginBottom:20}}>
     {i.title}
 </Typography>
 
-<Grid style={{height:'18vh'}}>
 
 {
     i.options.map((a,b)=>(
 <Typography key={b} 
 style={{color:'#abc4c7',
 fontSize:12,
-margin:'5px 0'
+margin:'5px'
 }}>
     {a}
 </Typography>
@@ -93,7 +96,7 @@ margin:'5px 0'
 const styles =theme=>({
 
     container:{
-        background:theme.palette.primary.topbar,
+        background:theme.palette.primary.violet,
         width: '98.9vw',
         minHeight:'35vh',
         display:'flex',
@@ -104,10 +107,12 @@ const styles =theme=>({
         height:'35vh',
         display:'flex',
         flexDirection:'column',
+        alignItems:'center',
         justifyContent:'space-around',
         [theme.breakpoints.down('sm')]:{
             marginLeft:'5vw'
-        }
+        },
+        textAlign:'start'
     }
 
 })

@@ -44,7 +44,7 @@ const toggleFormDisplay=()=>setDisplay(!display)
 
 <Navbar/>
 
-<SpeedDial/>
+{/* <SpeedDial/> */}
 
 <Section1 toggleFormDisplay={toggleFormDisplay}/>
 

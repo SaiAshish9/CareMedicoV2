@@ -4,6 +4,9 @@ import {MuiThemeProvider,createMuiTheme,responsiveFontSizes} from '@material-ui/
 import CssBaseline from '@material-ui/core/CssBaseline'
 import purple from '@material-ui/core/colors/purple'
 
+// import AvenirNext from './assets/Metropolis-Regular.otf'
+
+
 
 
 
@@ -24,10 +27,11 @@ function styledRoot(Component){
                    default:props.dark?'#303030':'white'
                 },
                 primary:{
-                    main:'#ea315a',
+                    main:'#EA315A',
                     topbar:'#2e3537',
                     topbarBtn:'rgba(0,0,0,.2)',
-                    logoDark:'#5d5d5e'
+                    logoDark:'#5d5d5e',
+                    violet:'#5A6AB0'
                 
                 },
                 secondary:{
@@ -41,7 +45,12 @@ function styledRoot(Component){
             },
             typography:{
                 useNextVariants:true,
-                fontFamily:"'Poppins', sans-serif"
+                fontFamily:'Avenir Next,"sans-serif"',
+                // fontFamily: 'Metropolis',
+                // fontFamily:"'Poppins', sans-serif"
+                fontFamily: "'Roboto', sans-serif"
+  
+            
             }
         })
         

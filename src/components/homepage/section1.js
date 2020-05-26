@@ -72,7 +72,7 @@ src={MobilePic}
 className={classes.img}
 style={{
     width:'100%',
-    minWidth:'35em',
+    minWidth:'37em',
     height:'70vh'
         }}
 />

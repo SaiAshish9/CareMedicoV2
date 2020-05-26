@@ -7,10 +7,10 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 
 export const content=[
-    {
-        content:'One Infinity Loop Av, Tk 123456',
-        icon:<RoomIcon style={{color:'white',fontSize:15,marginRight:2,position:'relative',top:3}} />
-    },
+    // {
+    //     content:'One Infinity Loop Av, Tk 123456',
+    //     icon:<RoomIcon style={{color:'white',fontSize:15,marginRight:2,position:'relative',top:3}} />
+    // },
     {
         content:'+12 123 123 123',
         icon:<PhoneIcon style={{color:'white',fontSize:15,marginRight:2,position:'relative',top:3}} />

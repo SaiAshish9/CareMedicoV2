@@ -9,12 +9,7 @@ import Typography from '@material-ui/core/Typography'
 
 const LeftRight = ({content,classes,image}) => {
     return (
-        <Container
-        style={{
-            minHeight:'50vh',
-            margin:'10vh 0'
-        }}
-        >
+      
             
             <Grid
 
@@ -23,7 +18,7 @@ className={classes.grid}
 >
 
     <Grid
-    lg={4}
+    lg={3}
     className={classes.desc}
 
     >
@@ -46,7 +41,7 @@ lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor sit amet, c
 
 
     <Grid
-    lg={6}
+    lg={5}
     >
     <img
     src={image}
@@ -59,42 +54,40 @@ lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor sit amet, c
 </Grid>
 
 
-        </Container>
     )
 }
 
 const styles =theme=>({
-desc:{
-    display:'flex',
-    justifyContent:'space-around',
-    flexDirection:'column',
-    height:'40vh',
-    [theme.breakpoints.up('md')]:{
-        marginLeft:'7rem'
+    desc:{
+        display:'flex',
+        justifyContent:'space-around',
+        flexDirection:'column',
+        height:'40vh'
+    },
+    grid:{
+        display:'flex',
+        justifyContent:'space-around',
+        alignItems:'center',
+        flexWrap: 'wrap',
+        alignItems:'center',
+        padding:'5vw'
+    },
+    typo:{
+        color:theme.palette.primary.logoDark,
+        fontSize:'1.5rem'
+    },
+    typo1:{
+        color:'#999',
+        fontWeight:'#ebebeb',
+        fontSize:15
+    },
+    img:{
+        borderRadius:10,
+        height:'45vh',
+        [theme.breakpoints.up('md')]:{
+            // marginLeft:'7rem'
+        }
     }
-},
-grid:{
-    display:'flex',
-    justifyContent:'space-between',
-    alignItems:'center',
-    flexWrap: 'wrap',
-    alignItems:'center',
-    [theme.breakpoints.down('md')]:{
-        flexDirection:'column-reverse'
-    }
-},
-typo:{
-    color:theme.palette.primary.logoDark,
-    fontSize:'1.5rem'
-},
-typo1:{
-    color:'#999',
-    fontSize:15
-},
-img:{
-    borderRadius:10,
-    height:'45vh'
-}
 })
 
 export default withStyles(styles)(LeftRight)

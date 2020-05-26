@@ -78,7 +78,7 @@ justifyContent:'space-between'
 },
 navLink:{
     textDecoration:'none',
-    margin:'0 5px',
+    margin:'0 30px',
     color:theme.palette.primary.logoDark,
     '&:hover':{
         color:theme.palette.primary.main

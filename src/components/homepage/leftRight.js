@@ -9,19 +9,14 @@ import Typography from '@material-ui/core/Typography'
 
 const LeftRight = ({content,classes,image}) => {
     return (
-        <Container
-        style={{
-            minHeight:'50vh',
-            margin:'10vh 0'
-        }}
-        >
+    
             
             <Grid
 
 className={classes.grid}
 
 >    <Grid
-    lg={6}
+    lg={5}
     >
     <img
     src={image}
@@ -31,7 +26,7 @@ className={classes.grid}
     </Grid>
 
     <Grid
-    lg={4}
+    lg={3}
     className={classes.desc}
 
     >
@@ -54,7 +49,6 @@ lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor sit amet, c
 </Grid>
 
 
-        </Container>
     )
 }
 
@@ -67,10 +61,11 @@ desc:{
 },
 grid:{
     display:'flex',
-    justifyContent:'space-between',
+    justifyContent:'space-around',
     alignItems:'center',
     flexWrap: 'wrap',
-    alignItems:'center'
+    alignItems:'center',
+    padding:'5vw'
 },
 typo:{
     color:theme.palette.primary.logoDark,
@@ -85,7 +80,7 @@ img:{
     borderRadius:10,
     height:'45vh',
     [theme.breakpoints.up('md')]:{
-        marginLeft:'7rem'
+        // marginLeft:'7rem'
     }
 }
 })
